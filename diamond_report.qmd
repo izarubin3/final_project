@@ -13,5 +13,40 @@ source('packages.R')
 
 diamonds <- tibble(read.csv('diamonds_train.csv'))
 
-descriptives(diamonds)
+head(diamonds)
+
+diamonds[c("cut", "color", "clarity")] <- lapply(
+  diamonds[c("cut", "color", "clarity")], as.factor
+  )
+
+diamonds$cut <- factor(diamonds$cut, 
+levels = c("Fair", "Good", "Very Good", "Premium", "Ideal"))
+
+diamonds$clarity <- factor(diamonds$clarity, 
+levels = c("I1", "SI2", "SI1", "VS2", "VS1", "VVS2", "VVS1", "IF"))
+
+
+# Set up a 3-row, 3-column layout for plots
+par(mfrow = c(2, 3))  
+
+# Bar Plots (Categorical Variables)
+barplot(table(diamonds$cut), main = "Cut Distribution", col = "steelblue")
+barplot(table(diamonds$color), main = "Color Distribution", col = "steelblue")
+barplot(table(diamonds$clarity), main = "Clarity Distribution", col = "steelblue")
+
+# Histograms (Numeric Variables)
+hist(diamonds$carat, main = "Carats Distribution", col = "steelblue")
+hist(diamonds$depth, main = "Depth Distribution", col = "steelblue")  # Consider filtering out outliers
+hist(diamonds$table, main = "Table Distribution", col = "steelblue")
+
+# More Histograms
+hist(diamonds$price, main = "Price Distribution", col = "steelblue")
+hist(diamonds$x, main = "Length (x) Distribution", col = "steelblue")
+
+# Reset layout
+par(mfrow = c(1, 1))
+
+hist(diamonds$y, main = "Width (y) Distribution", col = "steelblue")
 ```
+
+\

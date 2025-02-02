@@ -5,18 +5,20 @@ Illia
 
     ✅ All required packages are installed and loaded!
 
+    # A tibble: 6 × 10
+      carat cut       color clarity depth table price     x     y     z
+      <dbl> <chr>     <chr> <chr>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+    1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+    2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+    3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+    4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+    5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+    6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
 
-     DESCRIPTIVES
+![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-1.png)
 
-     Descriptives                                                                                                                              
-     ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-                             carat        cut      color    clarity    depth       table       price       x           y           z           
-     ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-       N                         48940    48940    48940      48940       48940       48940       48940       48940       48940        48940   
-       Missing                       0        0        0          0           0           0           0           0           0            0   
-       Mean                  0.7982276                                 61.74914    57.45834    3936.532    5.731582    5.735036     3.538968   
-       Median                0.7000000                                 61.80000    57.00000    2401.000    5.700000    5.710000     3.530000   
-       Standard deviation    0.4743533                                 1.434620    2.239743    3997.910    1.123013    1.146151    0.7071871   
-       Minimum               0.2000000                                 43.00000    43.00000         326    0.000000    0.000000     0.000000   
-       Maximum                5.010000                                 79.00000    95.00000       18823    10.74000    58.90000     31.80000   
-     ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-2.png)
+
+![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-3.png)
+
+  
