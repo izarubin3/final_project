@@ -26,4 +26,6 @@ Illia
 
 ![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-3.png)
 
+![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-4.png)
+
   

@@ -56,6 +56,7 @@ par(mfrow = c(1, 1))
 
 # More Histograms
 hist(diamonds$price, main = "Price Distribution", col = "steelblue")
+hist(diamonds$x, main = "Length (x) Distribution", col = "steelblue")
 ```
 
 \
