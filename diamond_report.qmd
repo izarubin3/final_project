@@ -15,6 +15,9 @@ diamonds <- tibble(read.csv('diamonds_train.csv'))
 
 head(diamonds)
 
+diamonds %>%
+  summarise(across(everything(), ~sum(is.na(.))))
+
 diamonds[c("cut", "color", "clarity")] <- lapply(
   diamonds[c("cut", "color", "clarity")], as.factor
   )
@@ -39,12 +42,20 @@ hist(diamonds$carat, main = "Carats Distribution", col = "steelblue")
 hist(diamonds$depth, main = "Depth Distribution", col = "steelblue")  # Consider filtering out outliers
 hist(diamonds$table, main = "Table Distribution", col = "steelblue")
 
+
+# Modify layout
+par(mfrow = c(1, 3))
+
 # More Histograms
-hist(diamonds$price, main = "Price Distribution", col = "steelblue")
 hist(diamonds$x, main = "Length (x) Distribution", col = "steelblue")
+hist(diamonds$y, main = "Width (y) Distribution", col = "steelblue")
+hist(diamonds$z, main = "Height (z) Distribution", col = "steelblue")
 
 # Reset layout
 par(mfrow = c(1, 1))
+
+# More Histograms
+hist(diamonds$price, main = "Price Distribution", col = "steelblue")
 ```
 
 \

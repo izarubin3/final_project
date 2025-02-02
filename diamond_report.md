@@ -15,8 +15,15 @@ Illia
     5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
     6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
 
+    # A tibble: 1 × 10
+      carat   cut color clarity depth table price     x     y     z
+      <int> <int> <int>   <int> <int> <int> <int> <int> <int> <int>
+    1     0     0     0       0     0     0     0     0     0     0
+
 ![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-1.png)
 
 ![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-2.png)
+
+![](diamond_report.markdown_strict_files/figure-markdown_strict/unnamed-chunk-1-3.png)
 
   
