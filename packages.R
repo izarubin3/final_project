@@ -2,7 +2,7 @@
 packages <- c(
   "ggplot2", "dplyr", "tidyr", "readr", 
   "purrr", "stringr", "lubridate", "forcats", 
-  "knitr", "rmarkdown", "quarto", "gt"
+  "knitr", "rmarkdown", "quarto", "gt", "readxl", "jmv"
 )
 
 # Install missing packages

@@ -1,26 +1,22 @@
 # Diamond Model
 Illia
 
-## Quarto
+## Data preparation, exploratory analysis
 
-Quarto enables you to weave together content and executable code into a
-finished document. To learn more about Quarto see <https://quarto.org>.
+    ✅ All required packages are installed and loaded!
 
-## Running Code
 
-When you click the **Render** button a document will be generated that
-includes both content and the output of embedded code. You can embed
-code like this:
+     DESCRIPTIVES
 
-``` r
-1 + 1
-```
-
-    [1] 2
-
-You can add options to executable code like this
-
-    [1] 4
-
-The `echo: false` option disables the printing of code (only output is
-displayed).
+     Descriptives                                                                                                                              
+     ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+                             carat        cut      color    clarity    depth       table       price       x           y           z           
+     ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+       N                         48940    48940    48940      48940       48940       48940       48940       48940       48940        48940   
+       Missing                       0        0        0          0           0           0           0           0           0            0   
+       Mean                  0.7982276                                 61.74914    57.45834    3936.532    5.731582    5.735036     3.538968   
+       Median                0.7000000                                 61.80000    57.00000    2401.000    5.700000    5.710000     3.530000   
+       Standard deviation    0.4743533                                 1.434620    2.239743    3997.910    1.123013    1.146151    0.7071871   
+       Minimum               0.2000000                                 43.00000    43.00000         326    0.000000    0.000000     0.000000   
+       Maximum                5.010000                                 79.00000    95.00000       18823    10.74000    58.90000     31.80000   
+     ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 

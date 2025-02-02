@@ -10,4 +10,8 @@ editor: visual
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 
 source('packages.R')
+
+diamonds <- tibble(read.csv('diamonds_train.csv'))
+
+descriptives(diamonds)
 ```
