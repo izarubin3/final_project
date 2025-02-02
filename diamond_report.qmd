@@ -45,8 +45,6 @@ hist(diamonds$x, main = "Length (x) Distribution", col = "steelblue")
 
 # Reset layout
 par(mfrow = c(1, 1))
-
-hist(diamonds$y, main = "Width (y) Distribution", col = "steelblue")
 ```
 
 \
